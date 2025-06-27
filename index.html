@@ -2,60 +2,57 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Kang Koffie</title>
+		<title>Suhendi - Portfolio</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
-			integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
-			crossorigin="anonymous"
 		/>
 	</head>
 	<body>
-		<nav>
-			<ul class="nav justify-content-center">
-				<li class="nav-item">
-					<a class="nav-link" href="#">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">About Me</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Project</a>
-				</li>
-				<li>
-					<a class="nav-link" href="#">Work History</a>
-				</li>
-			</ul>
-		</nav>
-		<section class="container mt-5 text-center">
-			<img
-				src="assets/SH.jpg"
-				alt="Suhendi"
-				class="rounded-circle shadow-lg border border-3 border-white"
-				width="250"
-				height="250"
-				style="object-fit: cover"
-			/>
-			<h1>Halo, saya Suhendi</h1>
-			<p class="lead mt-3">
-				Saya seorang praktisi IT dan pengembang sistem ERP yang belajar
-				secara mandiri. Saatini saya membangun solusi digital berbasis
-				open source untuk mendukung operasional perusahaan - Mulai dari
-				ERP, infrastruktur Server, Jaringan dan automatiasai proses
-				<kerj class="a"></kerj>
-			</p>
-			<p class="text-muted">
-				Tidak berasal dari latar belakang akademik tinggi, tapi saya
-				percaya bahwa keahlian dibentuk oleh kerja nyata dan semangat
-				belajar tanpa henti.
-			</p>
-		</section>
-
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-			crossorigin="anonymous"
-		></script>
+		<div class="container">
+			<header class="header">
+				<nav class="main-nav">
+					<ul class="main-nav__list">
+						<li class="main-nav__item"><a href="#">Home</a></li>
+						<li class="main-nav__item"><a href="#">About</a></li>
+						<li class="main-nav__item"><a href="#">Project</a></li>
+						<li class="main-nav__item">
+							<a href="#">Let's Talk</a>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<section class="hero">
+					<div>
+						<h1 class="heading-primary">Halo, Saya Suhendi!</h1>
+						<p class="hero__description">
+							Saya membangun sistem ERP - HRMS, mengelola server
+							dan jaringan, dan mengotomasi pekerjaan dengan open
+							source tools.
+						</p>
+						<p class="hero__add-description">
+							Semua saya pelajari secara mandiri, tanpa gelar,
+							tapi penuh semangat dan pengalaman nyata.
+						</p>
+						<div class="hero__btn-container">
+							<a class="btn btn--full margin-right-sm" href="#"
+								>Let's Talk</a
+							>
+							<a class="btn btn--outline" href="#"
+								>Learn more &darr;</a
+							>
+						</div>
+					</div>
+					<div class="hero__img">
+						<img src="assets/SH.jpg" alt="Suhendi" />
+					</div>
+				</section>
+			</main>
+		</div>
 	</body>
 </html>

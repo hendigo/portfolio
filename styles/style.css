@@ -1,0 +1,159 @@
+/* 
+
+--- TYPOGRAPHY SYSTEM
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-- Font weights
+DefaultL 400
+
+- Line heights
+Default: 1
+
+
+
+
+--- 02 COLORS
+Primary : #FECB5D
+Tint: 
+#e5b754
+#7f662f
+#987a38
+#b28e41
+#ffe5ae
+#fff5df
+#fffaef
+Shades: 
+Accents:
+Greys
+
+#9A9A9A
+
+--- 05 SHADOWS
+
+--- 06 BORDER RADIUS
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: sans-serif;
+	line-height: 1;
+	font-weight: 400;
+	color: #736f66;
+}
+
+.margin-right-sm {
+	margin-right: 1.6rem !important;
+}
+
+.container {
+	height: 100vh;
+	background-color: #fffaef;
+}
+
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	font-size: 2rem;
+	text-decoration: none;
+	padding: 1.6rem 3.2rem;
+	border-radius: 1.2rem;
+	transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+	background-color: #fecb5d;
+	color: #736f66;
+}
+
+.btn--full:hover,
+.btn--full:active {
+	background-color: #e5b754;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+	background-color: #fff;
+	color: #736f66;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+	background-color: #fffaef;
+	box-shadow: inset 0 0 0 3px #fecb5d;
+}
+
+.header {
+	background-color: #fff5df;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	padding: 1rem 0;
+	box-shadow: 0 2px 15px 2px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav__list {
+	list-style: none;
+	display: flex;
+	gap: 4.8rem;
+}
+
+.main-nav__item {
+	padding: 1rem 2rem;
+}
+
+.hero {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 16rem 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+
+.heading-primary {
+	font-size: 6.2rem;
+	letter-spacing: -0.5px;
+}
+
+.hero__description {
+	margin-top: 3.2rem;
+	font-size: 2.4rem;
+	line-height: 1.4;
+}
+
+.hero__add-description {
+	margin-top: 0.5rem;
+	margin-bottom: 4.4rem;
+	font-size: 1.8rem;
+	line-height: 1.2;
+	color: #9a9a9a;
+}
+
+.hero__img {
+	width: 100%;
+}
+
+.hero__img img {
+	width: 470px;
+	height: 470px;
+	border-radius: 999px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}
